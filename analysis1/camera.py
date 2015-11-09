@@ -1,16 +1,25 @@
+# Import packages
 import numpy as np
 import matplotlib.pyplot as plt
 
-# load in data
+# Load data
 camera_1d = np.loadtxt('camera.txt')
 
-# reshape long 1D array
-newcam = camera_1d.reshape(512,512)
+# Number of pixels
+P = camera_1d.size
 
-# look at the image
-plt.imshow(newcam.T)
+# Find dimensions (is it a square?)
+# Make sure N is an integer
+N = int(np.sqrt(P))
 
-# show in grayscale
-plt.imshow(newcam.T, cmap = 'gray')
+# Reshape long 1D array to 2D
+camera_2d = camera_1d.reshape(N,N)
 
+# Transpose the image
+camera_2dT = camera_2d.T
+
+# Show in grayscale
+plt.show(camera_2dT, cmap = 'gray')
+
+# Show the image
 plt.show()

@@ -1,0 +1,14 @@
+## From 'Loading data form NifTI images
+#  http://practical-neuroimaging.github.io/fmri-analysis/loading_nifti_images.html
+
+## What type of thing is img?
+type(img) # returns: nibabel.nifti1.Nifti1Image (which is the class) # Or 
+img? # might be better. Returns Type: Nifti1Image
+
+## What attributes and methods does it have?
+nib. TAB # to see list of attributes and methods # Or
+# I can type ? after, e.g.,
+nib.spatialimages? # to see details about each module
+
+## Started script for the anatomical image exercise: hmwk2.py
+

@@ -1,3 +1,6 @@
+# General questions:
+# 1. What is a .swp file? How do I properly handle it?
+
 ## From 'Loading data form NifTI images
 #  http://practical-neuroimaging.github.io/fmri-analysis/loading_nifti_images.html
 
@@ -12,3 +15,4 @@ nib.spatialimages? # to see details about each module
 
 ## Started script for the anatomical image exercise: hmwk2.py
 
+# Questions from anatomical image exercise
